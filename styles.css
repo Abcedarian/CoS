@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Georama', sans-serif;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.nav ul {
+    margin: 0;
+}
+
+.main-nav ul {
+    margin: 0;
+} 
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    color: white;
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+}
+
+.main-nav {
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+}
+
+.main-nav li {
+     padding: 0 0.3%;
+}
+
+ .nav a:hover {
+    background-color: rgba(255, 255, 255, .3);
+    padding: .5em;
+}
+
+.nav-li li {
+    display: inline;
+}
+
+.main-header {
+    background-image: url("images/maxresdefault.jpg");
+    background-size: cover;
+    padding-bottom: 3px;
+} 
+
+
+.COS {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-weight: normal;
+    color: white;
+}
+
+.COS-large {
+    font-size: 7em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 5000px;
+    margin: 0 50;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: 'Teko', sans-serif;
+    font-weight: normal;
+    font-size: 2.5em;
+    color: #333;
+    text-align: center
+}
+
+.main-footer {
+    background-color: #666;
+    color: white;
+    padding: .25em 0;
+    margin: 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 3em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar {
+    width: 130px;
+    position:  fixed;
+    z-index: 15;
+    top: 220px;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+}
+
+.main {
+    margin-left: 140px;
+    padding: 0 10px;
+    padding-bottom: 100px;
+    line-height: 25px;
+}
+
+.sidebar ul {
+    max-width: 1px;
+}
+
+.spacing {
+    padding-left: 15px;
+}
+
+.logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.button {
+        border: 1px solid #fff;
+        font-size: 0.75em;
+        outline: none;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        padding: 10px 25px;
+        border-radius: 2px;
+        transition: ease-out 0.3s;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 1; 
+}
+
+.button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.button:before {
+    transition: 0.3s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    content: "";
+    background-color: white;
+}
+
+.button:hover:before {
+    transition: 0.5s all ease;
+    left:0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+
+.logo-small img {
+    float: left;
+    width: 110px;
+    height: auto;
+}
